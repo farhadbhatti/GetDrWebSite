@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/GetDr.png"/>
+    <title>GetDr. Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+      body{
+        padding-top: 40px;
+      }
+    </style>
+    
+    
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["sname"].value;
+            if (x == null || x == ""){
+              alert("Name must be filled out");
+              return false;
+            }
+            else if(x.length < 3){
+              alert("Please Enter atleast 3 Characters");
+              return false;
+            }
+            var y = document.forms["myForm"]["semail"].value;
+            if (y == null || y== ""){
+              alert("Email must be filled out");
+              return false;
+            }
+          }
+    </script>
+    
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class = "navbar navbar-inverse navbar-fixed-top" id = "my-navbar" >
+      <div class="container">
+        <div class = "navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="" class="navbar-brand">GetDr. App</a>
+        </div><!--End-Navbar-Head-->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <a href="" class="btn btn-warning navbar-btn navbar-right">Download Now</a>
+        <ul class="nav navbar-nav">
+          <li><a href="#features">Features</a>
+          <li><a href="#gallery">Gallery</a>
+          <li><a href="#feedback">Feedback</a>
+          <li><a href="#faq">FAQ's</a>
+          <li><a href="#subscribe">Subscribe</a>
+        </ul>
+      </div>
+      </div>
+    </nav> <!--End-Navbar-->
+      
+    <!-- Jumbotron -->
+      <div class="jumbotron">
+        <div class="container text-center">
+        <h1>GetDr. App</h1>
+        <p>Way to Health</p>
+        <div class="btn-group">
+          <a href="" class="btn btn-lg btn-warning">Download for Android</a>
+          <a href="" class="btn btn-lg btn-default">About Developer</a>
+          <a href="" class="btn btn-lg btn-warning">Download for iOS</a>
+        </div>
+      </div><!--End Container-->
+    </div><!-- End Jumbotron -->
+    
+<!--Features-->
+     <div class="container">
+        <section>
+           <div class="page-header" id="features">
+          <h2>Features <small>Beautiful and useful features of App</small></h2>
+        </div><!--End Page Header-->
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>Usability</h3>
+            <p>This App provides you the best feature to check out the best and most accurate doctors for your severe health conditions
+              in order to give you a prefferable treatment.The App requires some of your attention and will require no time to suggest, as it is build
+              to serve you in bad conditions.In order to serve you it will simply take your health condition choosen by you, and your preffered location in
+              which you want to visit the Doctor and you can also put some constraints on the suggestions acccording to the your choice about financial limits.</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="images/female patient.jpg" class="img-responsive img-thumbnail" alt="Usability feature Image Text">
+          </div>
+        </div><!--End Row-->
+        
+        <hr>
+        
+        <div class="row">
+          <div class="col-sm-8">
+            <h3>Accuracy</h3>
+            <p>This App is very Accurate App. it will never give you bad suggestion and it will never make you feel bad. This is very highly interactive Application.</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="images/accuracy.jpg" class="img-responsive img-thumbnail" alt="Usability feature Image Text">
+          </div>
+        </div><!--End Row-->
+        
+        <hr>
+        
+        <div class="row">
+          <div class="col-lg-8">
+            <h3>Performance</h3>
+            <p>The Performance of this Application is very accurate and good.It performs as promised to the user.</p>
+          </div>
+          <div class="col-lg-4">
+            <img src="images/performance 1.jpg" class="img-responsive img-thumbnail" alt="Usability feature Image Text">
+          </div>
+        </div><!--End Row-->
+        
+        <hr>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h4>Usability</h4>
+                <p>This App is highly usable and accurate. It will never give you bad suggestion and it will never make you feel bad. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <span class="glyphicon glyphicon-star"></span>
+                <h4>Accuracy</h4>
+                <p>This App is very Accurate App. it will never give you bad suggestion and it will never make you feel bad. This is very highly interactive Application.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="panel panel-default text-center">
+              <div class="panel-body">
+                <span class="glyphicon glyphicon-tasks"></span>
+                <h4>Performance</h4>
+                <p>The Performance of this Application is very accurate and good.It performs as promised to the user.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div><!--End Row-->
+        
+        </section>
+     </div><!--End Container-->
+
+<!--Gallery-->
+    <div class="container">
+      <section>
+        <div class="page-header" id="gallery">
+          <h2>Gallery <small>The UI Gallery of GetDr. Application</small></h2>
+        </div>
+        
+        <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+            <li data-target="#screenshot-carousel" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="images/1.jpg" alt="Hospital Image">
+              <div class="carousel-caption">
+                <h3>Start Up Screen</h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/2.jpg" alt="Hospital Image">
+              <div class="carousel-caption">
+                <h3>Search For Doctors</h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/3.jpg" alt="Hospital Image">
+              <div class="carousel-caption">
+                <h3>User's Profile</h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/4.jpg" alt="Hospital Image">
+              <div class="carousel-caption">
+                <h3>Settings Menu</h3>
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/5.jpg" alt="Hospital Image">
+              <div class="carousel-caption">
+                <h3>About Developer</h3>
+              </div>
+            </div>
+          </div><!--End Carousel inner-->
+          <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div><!--End Carousel-->
+        
+      </section>
+    </div>
+    
+<!--Feedback-->
+    <div class="container">
+      <section>
+        <div class="page-header" id="feedback">
+          <h2>FeedBack <small>The great user Feedback</small></h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <blockquote>
+              <p>This App is Amazing. It have created a new era in health and medical problem solution. 
+                I reccomend ebveryone to use this app as it is a very userful and must having applivation in your Phone in case of any emergency.</p>
+              <footer>Farhad Akram</footer>
+            </blockquote>
+          </div>
+          
+          <div class="col-lg-4">
+            <blockquote>
+              <p>This is very good Application. It is very useful Application. It helps me finding best doctors for me very accurately. I Love This Application</p>
+              <footer>Noman Nasir</footer>
+            </blockquote>
+          </div>
+          
+          <div class="col-lg-4">
+            <blockquote>
+              <p>This App has very Good User Interface. It has great color Combinations and a very accurate Functionality. It works as promised.</p>
+              <footer>Muhammad Yousaf Ali Raza</footer>
+            </blockquote>
+          </div>
+        </div><!--end Row--?
+      </section>
+    </div><!--End Container-->
+    
+<!-- FAQ's-->
+    <div class="container">
+      <section>
+        <div class="page-header" id="faq">
+          <h2>FAQ's <small>Here are some of Frequently Asked Questions about Application</small></h2>
+        </div><!--End page Header-->
+        
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">
+                  Is this App Free?
+                </a>
+              </div><!--End Panel Title-->
+              <div id="collapse-1" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Yes This App is Abolutely free. We want not a single penny from you, we just demand to keep sharing this beautiful and useful App
+                    to your Friends.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">
+                  Does This App needs Any Internet?
+                </a>
+              </div><!--End Panel Title-->
+              <div id="collapse-2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Yes This App needs an active internet Connection in order to give you the best services.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-3" data-toggle="collapse" data-parent="#accordion">
+                  Does this App needs any special permissions?
+                </a>
+              </div><!--End Panel Title-->
+              <div id="collapse-3" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>This depends on your choice if you want to get location based services and also get suggestions about nearest pharmacy, then you will 
+                    need to give the "Location Permissions" to this App.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-4" data-toggle="collapse" data-parent="#accordion">
+                  Is this App available on International Level?
+                </a>
+              </div><!--End Panel Title-->
+              <div id="collapse-4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>
+                    No, Right Now it is Available only in Pakistan. but we are working on it to go beyond the limits and make it available on International level.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">
+                <a href="#collapse-5" data-toggle="collapse" data-parent="#accordion">
+                  Is This App stealing any Personal information from my Phone?
+                </a>
+              </div><!--End Panel Title-->
+              <div id="collapse-5" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>
+                    No, This app is absolutely not stealing a single bit of your personal data. As other apps in the market are first of all not free and 
+                    also stealing the personal information of the user but this app is not like the other apps. You can completely trust on this App.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </div><!--End Container-->
+
+    
+<!--Subscribe-->
+  <div class="container">
+    <h2>Subscribe <small>Please Fill out the following form to Subscribe</small></h2>
+    <hr>
+    <section>
+      <div class="well">
+        <div class="container text-center" id="subscribe">
+          <h3>Subscribe For More Apps by CodeGenius Inc.</h3>
+          <p> Enter Your Name & E-Mail to Subscribe</p>
+          
+          <form name="myForm" onsubmit="return validateForm()" action="" class="form-inline">
+            <div class="form-group">
+              <label for="Your Name">Your Name</label>
+              <input type="text" name="sname" class="form-control"  placeholder="your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="E-Mail">E-Mail</label>
+              <input type="email" name="semail" class="form-control" placeholder="your e-mail" required>
+            </div>
+            <button type="submit" value="Submit" class="btn btn-warning">Subscribe</button>
+            <hr>
+          </form>
+        </div>
+      </div><!--End Well-->
+    </section><!--End Subscribe-->
+  </div><!--End Container-->
+    
+    <!--Footer-->
+  <div class="container">
+    <div class="well">
+        <div class="text-center">
+          <p class="text-success">Copyright &#169; 2016 CodeGenius Incorporated (CGI)</p>
+        </div>
+    </div>
+  </div>
+<!--End Footer-->
+
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery-2.2.4.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>
